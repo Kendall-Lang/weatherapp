@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "main-title">
+        <h1> 
+            Weather App
+        </h1>
+    </div>
+    <div class = "wrapper">
+        <div class ="prompt-container">
+            <div>
+                <h3>Enter City Name</h3>
+            </div>
+            <input type="text" id="cityInput" placeholder="Enter city name">
+            <button onclick="getWeather()">Get Weather</button>
+            <div id="weatherResult"></div>
+        </div>
+        <div class = "results-container">
+            <h3>
+                Results
+            </h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
