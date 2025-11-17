@@ -2,29 +2,37 @@ body {
     font-family: Arial, sans-serif;
     background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fget.wallhere.com%2Fphoto%2FPittsburgh-Pennsylvania-city-1877471.jpg&f=1&nofb=1&ipt=dd8e75394da4c786b6b9da42be7ad8ed3e81edf879b9b85c1cef2bdd602c9981);
     background-position: center;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    display: flex;
+    /*
     padding-left: 50px;
     padding-top: 20px;
     padding-right: 100px;
     height: 100vh;
-    margin: 0;
-    max-width: 450px;
+    */
 }
 
 .main-title {
+    margin: auto;
+    position: absolute;
+    text-align: center;
     color: white;
     text-shadow: 0 0 10px black;
 }
 
 .wrapper {
     display: flex;
+    position: relative;
+    margin: auto;
+    width: 50%;
     justify-content: space-between;
-    gap: 50px
+    padding-top: 200px;
+    min-width: 1000px;
 }
 
 .prompt-container {
+    justify-content: center;
+    margin: auto;
+    align-items: center;
     text-align: left;
     background-color: white;
     padding: 30px;
@@ -58,21 +66,6 @@ button {
 button:hover {
     background-color: rgb(209, 209, 209);
     box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
-}
-
-.results-container {
-    text-align: left;
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-
-    transition: padding-top 1s;
-
-}
-
-.results-container:hover {
-    padding-top: 20px;
 }
 
 .error {
